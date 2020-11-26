@@ -1,5 +1,3 @@
-git config --global user.name "Jan Nowak"
-git config --global user.email jannowak@example.com
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -25,29 +23,42 @@ git config --global user.email jannowak@example.com
     </header>
 
     <main>
-    <h1 class="second-header">GIT</h1>
+        <h1 class="second-header">GIT</h1>
 
         <article>
-            <h2 class="third-header">1. Instalacja i konfiguracja</h2>
-            <p>Pobieranie: <a href="https://git-scm.com/">GIT</a></p>
-            <p>Konfiguracja: <br/>
-                git config --global user.name "Jan Nowak" - nazwa użytkownika,<br/>
-                git config --global user.email jannowak@example.com - adres e-mail użytkownika.</p>
+            <h2 class="third-header">1. Konfiguracja</h2>
+            <p>Konfiguracja: </p>
+            <p>git config --global user.name "Jan Nowak" - nazwa użytkownika,</p>
+            <p>git config --global user.email jannowak@example.com - adres e-mail użytkownika,</p>
+            <p>git config --get user.name - zwraca nazwę użytkownika,</p>
+            <p>git config --get user.email - zwraca adres e-mail użytkownika.</p>
+
         </article>
         <article>
             <h2 class="third-header">2. Podstawowe komendy:</h2>
             <p>git init - tworzy niewidoczny katalog w katalogu z projektem, który chcemy dodać do repozytorium,</p>
             <p>git status - zwraca aktualny stan repozytorium oraz spis plików wchodzących w jego skład,</p>
             <p>git add . - dodaje do repozytorium wszystkie pliki z głownego katalogu projektu,</p>
-            <p>git commit -m "opis zmian - tworzy kopię aktualnego stanu projektu wraz ze spisem zmian dokonanych od ostatniego commitu,</p>
+            <p>git commit -m "opis zmian - tworzy kopię aktualnego stanu projektu wraz ze spisem zmian dokonanych od
+                ostatniego commitu,</p>
             <p>gitk - wywołuje graficzny interface ukazujący wszystkie zapisane wersje i zmiany.</p>
         </article>
+
         <article>
-            <h2 class="third-header">4. Specyfikacja produktu:</h2>
-            <p><a href="https://www.w3.org/TR/html52/introduction.html#introduction">HTML 5.2</a>.</p>
+            <h2 class="third-header">3. GITHub:</h2>
+            <p>Adres strony: <a href="https://github.com/">GITHub</a></p>
+            <p>Po założeniu repozytorium na stronie, możemy wybrać jedną z 3 opcji dodania do niego plików i dla każdej
+                z nich mamy zestaw komend do skopiowania i wklejenia do terminala w celu wykonania żądanej operacji. W
+                terminalu pojawią się pytania o dane do logowania, które trzeba uzupełnić, by repozytorium online
+                zostało zsynchronizowane z tym na dysku.</p>
         </article>
 
-        
+        <article>
+            <h2 class="third-header">4. Źródło produktu:</h2>
+            <p><a href="https://git-scm.com/">GIT</a></p>
+        </article>
+
+
         <footer>
             &copy; Małgorzata Babiarz, Kraków 2020
         </footer>
