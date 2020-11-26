@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs WTF</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="main-header">Kurs "WTF? - Co ten frontend?"</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="js.html">JS</a>
+            <a href="git.html">GIT</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1 class="second-header">CSS (Cascading Style Sheets)</h1>
+
+        <article>
+            <h2 class="third-header">1. Budowa reguły:</h2>
+            <h2 class="second-header">selektor {<br />
+                właściwość: wartość;<br />
+                }</h2>
+        </article>
+
+        <article>
+            <h2 class="third-header">2. Link do zewnętrznego pliku ze stylami (.css):</h2>
+            <h2 class="second-header">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</h2>
+        </article>
+
+        <article>
+            <h2 class="third-header">3. Specyficzność stylu:</h2>
+            <h2 class="second-header">!important -&gt; &lt;znacznik style="właściwość: wartość"&gt;...&lt;/znacznik&gt;
+                -&gt; #name {} -&gt; .name {} -&gt; element {}</h2>
+            <p>!important - wstawione w definicję stylu eliminuje wszystkie nadpisania,</p>
+            <p>&lt;znacznik style="właściwość: wartość"&gt;...&lt;/znacznik&gt; - styl inline, wstawione w definicję
+                elementu na stronie,</p>
+            <p>&lt;znacznik class="name"&gt;...&lt;/znacznik&gt; -> selektor: .name - przydział elementu do klasy o
+                danym stylu,</p>
+            <p>&lt;znacznik id="name"&gt;...&lt;/znacznik&gt; -> selektor: #name - nadanie elementowi indywidualnej
+                nazwy.</p>
+        </article>
+
+        <article>
+            <h2 class="third-header">4. Specyfikacja produktu:</h2>
+            <p><a href="https://www.w3.org/TR/CSS/">CSS</a>.</p>
+        </article>
+
+
+        <footer>
+            &copy; Małgorzata Babiarz, Kraków 2020
+        </footer>
+
+    </main>
+</body>
+
+</html>

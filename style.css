@@ -1,0 +1,25 @@
+
+
+body {
+    background: lightgreen;
+}
+
+article {
+    background:lightyellow;
+}
+
+.main-header {
+    color: green;
+}
+
+.second-header {
+    color: brown;
+}
+
+.third-header {
+    color: green;
+}
+
+a {
+    color: green;
+}
