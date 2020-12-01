@@ -6,6 +6,8 @@ body {
 
 article {
     background:lightyellow;
+    padding:0px 10px;
+    margin:10px 0;
 }
 
 .main-header {
@@ -22,4 +24,9 @@ article {
 
 a {
     color: green;
+}
+.matrix {
+    float:left;
+    clear:right;
+    margin:0 10px 0 0;
 }

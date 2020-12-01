@@ -57,6 +57,7 @@
 
         <article>
             <h2 class="third-header">3. Box Model </h2>
+            <img class="matrix" src="falling-numbers-matrix-background-vector.jpg" height=150px width=150px alt="matrix">
             <p>&lt;div&gt;...&lt;/div&gt; - tworzy "pudełko" na treść, które można formatować przy pomocy stylów CSS:
             </p>
             <p>display: block; - element zajmuje całą szerokość strony, przy powieleniu znajduje się jeden pod drugim;
@@ -68,13 +69,55 @@
             <p>width:...; - definiuje szerokość elementu blokowego,</p>
             <p>height:...; - definiuje wysokość elementu blokowego,</p>
             <p>min-width:...; - definiuje minimalną szerokość elementu blokowego; przy rozmiarze okna poniżej tej
-                wartości pojawia się scroll; powyżej tej wartości element wydłuża się w nieskończoność,</p>
+                wartości pojawia się scroll w elemencie; powyżej tej wartości element wydłuża się w nieskończoność,</p>
             <p>min-height:...; - definiuje minimalną wysokość elementu blokowego; przy rozmiarze okna poniżej tej
-                wartości pojawia się scroll; powyżej tej wartości element wydłuża się w nieskończoność,</p>
+                wartości pojawia się scroll w elemencie; powyżej tej wartości element wydłuża się w nieskończoność;
+                nadmiarowa treść powoduje wydłużenie wysokości bloku,</p>
             <p>max-width:...; - definiuje maksymalną szerokość elementu blokowego; przy rozmiarze okna poniżej tej
-                wartości element się skraca; powyżej tej wartości element nie wydłuża się,</p>
+                wartości element się skraca (brak scrolla); powyżej tej wartości element nie wydłuża się; nadmiarowa
+                treść przechodzi do linii poniżej,</p>
             <p>max-height:...; - definiuje maksymalną wysokość elementu blokowego; przy rozmiarze okna poniżej tej
-                wartości element się skraca; powyżej tej wartości element nie wydłuża się; nadmiarowa treść wychodzi poza obręb bloku,</p>
+                wartości element się skraca (brak scrolla); powyżej tej wartości element nie wydłuża się; nadmiarowa
+                treść wychodzi poza obręb bloku,</p>
+            <p>overflow: hidden; - nadmiarowa treść zostaje ucięta,</p>
+            <p>overflow: visible; - nadmiarowa treść pozostaje widoczna poza obrębem bloku,</p>
+            <p>overflow: auto; - nadmiarowa treść zostaje ukryta i wewnątrz bloku pojawia się scroll umożliwiający jej
+                odczytanie,</p>
+            <p>padding-top: t; - grubość wewnętrznego marginesu górnego,</p>
+            <p>padding-right: r; - grubość wewnętrznego marginesu prawego,</p>
+            <p>padding-bottom: b; - grubość wewnętrznego marginesu dolnego,</p>
+            <p>padding-left: l; - grubość wewnętrznego marginesu lewego,</p>
+            <p>padding: t r b l; - grubość wewnętrznego marginesu kolejno górnego, prawego, dolnego i lewego,</p>
+            <p>padding: t r; - grubość wewnętrznego marginesu górnego i dolnego oraz prawego i lewego (wartości
+                lustrzane),</p>
+            <p>border-width:...; - grubość obramowania bloku,</p>
+            <p>border-style:...; - styl obramowania bloku (solid, dashed, dotted),</p>
+            <p>border-color:...; - kolor obramowania bloku,</p>
+            <p>border:x,y,z; - grubość x, styl y i kolor z obramowania bloku,</p>
+            <p>border-top/right/bottom/left:...; - jak przy własności padding,</p>
+            <p>border-radius:...; - zaokrąglenie narożników bloku (50% - koło/elipsa),</p>
+            <p>margin:... auto; - grubość marginesu dzielona na pół, element wyśrodkowany na stronie (musi mieć zadaną
+                szerokość),</p>
+            <p>box-sizing:content-box; - podane wymiary dotyczą zawartości bloku (padding i border trzeba dodać by
+                uzyskać całkowity wymiar bloku),</p>
+            <p>box-sizing:border-box; - podane wymiary dotyczą obramowania bloku (padding i border trzeba odjąć by
+                uzyskać wymiar zawartości),</p>
+            <p>position:static; - domyślne położenie elementu,</p>
+            <p>position:relative; - położenie względem domyślnej pozycji,</p>
+            <p>position:absolute; - położenie względem elementu nadrzędnego, w przypadku jego braku - względem elementu
+                body,</p>
+            <p>position:fixed; - położenie ustalone względem okna przeglądarki,</p>
+            <p>position:sticky; - obiekt podczas przewijania strony "przykleja się" w zadanej odległości od krawędzi
+                okna i pozostaje tam, dopóki nie dojdzie do spodu elementu nadrzędnego, wtedy pozostaje w obrębie tego
+                elementu; uwaga: element nadrzędny nie może mieć ustawionej właściwości overflow,</p>
+            <p>top; - położenie elementu podrzędnego względem górnej krawędzi elementu nadrzędnego,</p>
+            <p>right; - położenie elementu podrzędnego względem prawej krawędzi elementu nadrzędnego,</p>
+            <p>bottom; - położenie elementu podrzędnego względem dolnej krawędzi elementu nadrzędnego,</p>
+            <p>left; - położenie elementu podrzędnego względem lewej krawędzi elementu nadrzędnego,</p>
+            <p>z-index; - poziom warstwy - rzędna prostopadła do płaszczyzny strony; im większa wartość, tym wyżej,</p>
+            <p>float:right; - służy do "opływania" elementu położonego z prawej strony tekstem,</p>
+            <p>float:left; - służy do "opływania" elementu położonego z lewej strony tekstem,</p>
+            <p>float:right; - służy do "opływania" elementu położonego z prawej strony tekstem,</p>
         </article>
 
         <article>
