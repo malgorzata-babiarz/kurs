@@ -10,28 +10,28 @@
 
 <body>
     <header>
-        <h1 class="main-header">Kurs "WTF? - Co ten frontend?"</h1>
+        <h1 class="main-header">Kurs "WTF: Co ten frontend?!"</h1>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="html.html">HTML</a>
-            <a href="css.html">CSS</a>
-            <a href="js.html">JS</a>
-            <a href="git.html">GIT</a>
+        <nav class="navigation">
+            <a href="index.html" class="navigation__link navigation__link--main">Home</a>
+            <a href="html.html" class="navigation__link">HTML</a>
+            <a href="css.html" class="navigation__link">CSS</a>
+            <a href="js.html" class="navigation__link">JS</a>
+            <a href="git.html" class="navigation__link">GIT</a>
         </nav>
 
     </header>
 
     <main>
-        <h1 class="second-header">HTML (HyperText Markup Language)</h1>
+        <h1 class="page-header">HTML (HyperText Markup Language)</h1>
 
-        <article>
-            <h2 class="third-header">1. Budowa znaczników / tagów:</h2>
-            <h2 class="second-header">&lt;znacznik atrybut=”wartość”&gt;treść&lt;/znacznik&gt;</h2>
+        <article class="article">
+            <h2 class="article-header">1. Budowa znaczników / tagów:</h2>
+            <h2 class="important-text">&lt;znacznik atrybut=”wartość”&gt;treść&lt;/znacznik&gt;</h2>
         </article>
 
-        <article>
-            <h2 class="third-header">2. Najważniejsze znaczniki / tagi:</h2>
+        <article class="article">
+            <h2 class="article-header">2. Najważniejsze znaczniki / tagi:</h2>
             <p>&lt;head&gt;...&lt;/head&gt; - ustawienia główne dokumentu niewidoczne na stronie,</p>
             <p>&lt;body&gt;...&lt;/body&gt; - część widoczna na stronie,</p>
             <p>&lt;main&gt;...&lt;/main&gt; - główna część dokumentu,</p>
@@ -55,9 +55,10 @@
             <p>&lt;script&gt;...&lt; /script&gt; - wstawianie skryptów do dokumentu.</p>
         </article>
 
-        <article>
-            <h2 class="third-header">3. Box Model </h2>
-            <img class="matrix" src="falling-numbers-matrix-background-vector.jpg" height=150px width=150px alt="matrix">
+        <article class="article">
+            <h2 class="article-header">3. Box Model </h2>
+            <img class="matrix" src="falling-numbers-matrix-background-vector.jpg" height=150px width=150px
+                alt="matrix">
             <p>&lt;div&gt;...&lt;/div&gt; - tworzy "pudełko" na treść, które można formatować przy pomocy stylów CSS:
             </p>
             <p>display: block; - element zajmuje całą szerokość strony, przy powieleniu znajduje się jeden pod drugim;
@@ -118,27 +119,29 @@
             <p>float:right; - służy do "opływania" elementu położonego z prawej strony tekstem,</p>
             <p>float:left; - służy do "opływania" elementu położonego z lewej strony tekstem,</p>
             <p>float:right; - służy do "opływania" elementu położonego z prawej strony tekstem,</p>
+            <p>clear:left/right/both; - służy do usunięcia "opływania" elementu tekstem po lewej/prawej stronie/obu
+                stronach; podobne działanie: overflow: hidden/auto.</p>
         </article>
 
-        <article>
-            <h2 class="third-header">4. Sprawdzenie kodu</h2>
+        <article class="article">
+            <h2 class="article-header">4. Sprawdzenie kodu</h2>
             <p>W celu sprawdzenia poprawności kodu należy wkleić go w walidator <a
                     href="https://validator.w3.org/nu/#textarea">Nu Html Checker</a>.</p>
         </article>
 
-        <article>
-            <h2 class="third-header">5. Specyfikacja produktu:</h2>
+        <article class="article">
+            <h2 class="article-header">5. Specyfikacja produktu:</h2>
             <p><a href="https://www.w3.org/TR/html52/introduction.html#introduction">HTML 5.2</a></p>
         </article>
 
-        <article>
-            <h2 class="third-header">6. Spis globalnych atrybutów:</h2>
+        <article class="article">
+            <h2 class="article-header">6. Spis globalnych atrybutów:</h2>
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">HTML</a></p>
         </article>
 
 
 
-        <footer>
+        <footer class="footer">
             &copy; Małgorzata Babiarz, Kraków 2020
         </footer>
 

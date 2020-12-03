@@ -2,31 +2,62 @@
 
 body {
     background: lightgreen;
-}
-
-article {
-    background:lightyellow;
-    padding:0px 10px;
-    margin:10px 0;
-}
-
-.main-header {
-    color: green;
-}
-
-.second-header {
-    color: brown;
-}
-
-.third-header {
-    color: green;
+    width: 1000px;
+    margin: 0 auto;
 }
 
 a {
     color: green;
 }
+
+.article {
+    color:brown;
+    background:lightyellow;
+    box-sizing: border-box;
+    padding:1px 16px 1px 16px;
+    margin:10px 0;
+    border: 2px solid lightsalmon;
+    border-radius: 8px;
+}
+
+.article-header {
+    color: green;
+}
+
+.important-text {
+    color: red;
+}
+
+.main-header {
+    color: green;
+    background:lightyellow;
+    padding: 16px;
+    border: 2px solid green;
+    border-radius: 8px;
+}
+
 .matrix {
     float:left;
-    clear:right;
+    clear: right;
     margin:0 10px 0 0;
+}
+
+.navigation {
+    background: lightyellow;
+    padding: 16px;
+    border: 2px solid lightsalmon;
+    border-radius:8px;
+}
+
+.navigation__link {
+    color: salmon;
+    margin:8px;
+}
+
+.navigation__link--main {
+    color: green;
+}
+
+.page-header {
+    color: brown;
 }
