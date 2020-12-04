@@ -26,19 +26,19 @@
         <h1 class="page-header">CSS (Cascading Style Sheets)</h1>
 
         <article class="article">
-            <h2 class="article-header">1. Budowa reguły:</h2>
+            <h2 class="article__header">1. Budowa reguły:</h2>
             <h2 class="important-text">selektor {<br />
                 właściwość: wartość;<br />
                 }</h2>
         </article>
 
         <article class="article">
-            <h2 class="article-header">2. Link do zewnętrznego pliku ze stylami (.css):</h2>
+            <h2 class="article__header">2. Link do zewnętrznego pliku ze stylami (.css):</h2>
             <h2 class="important-text">&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</h2>
         </article>
 
         <article class="article">
-            <h2 class="article-header">3. Specyficzność stylu:</h2>
+            <h2 class="article__header">3. Specyficzność stylu:</h2>
             <h2 class="important-text">!important -&gt; &lt;znacznik style="właściwość: wartość"&gt;...&lt;/znacznik&gt;
                 -&gt; #name {} -&gt; .name {} -&gt; element {}</h2>
             <p>!important - wstawione w definicję stylu eliminuje wszystkie nadpisania,</p>
@@ -51,12 +51,80 @@
         </article>
 
         <article class="article">
-            <h2 class="third-header">4. Specyfikacja produktu:</h2>
+            <h2 class="article__header">4. Box Model </h2>
+            <img class="matrix" src="falling-numbers-matrix-background-vector.jpg" height=150px width=150px
+                alt="matrix">
+            <p>&lt;div&gt;...&lt;/div&gt; - tworzy "pudełko" na treść, które można formatować przy pomocy stylów CSS:
+            </p>
+            <p>display: block; - element zajmuje całą szerokość strony, przy powieleniu znajduje się jeden pod drugim;
+                domyślne ustawienie dla elementów m.in. section, article, p, main,</p>
+            <p>display: inline; - element ma szerokość taką jak jego zawartość, przy powieleniu ustawia się w jednej
+                linii; domyślne ustawienie dla elementów m.in. a,</p>
+            <p>display: inline-block; - element zachowuje się jak liniowy, ale można nadać mu atrybuty jak dla bloku.
+            </p>
+            <p>width:...; - definiuje szerokość elementu blokowego,</p>
+            <p>height:...; - definiuje wysokość elementu blokowego,</p>
+            <p>min-width:...; - definiuje minimalną szerokość elementu blokowego; przy rozmiarze okna poniżej tej
+                wartości pojawia się scroll w elemencie; powyżej tej wartości element wydłuża się w nieskończoność,</p>
+            <p>min-height:...; - definiuje minimalną wysokość elementu blokowego; przy rozmiarze okna poniżej tej
+                wartości pojawia się scroll w elemencie; powyżej tej wartości element wydłuża się w nieskończoność;
+                nadmiarowa treść powoduje wydłużenie wysokości bloku,</p>
+            <p>max-width:...; - definiuje maksymalną szerokość elementu blokowego; przy rozmiarze okna poniżej tej
+                wartości element się skraca (brak scrolla); powyżej tej wartości element nie wydłuża się; nadmiarowa
+                treść przechodzi do linii poniżej,</p>
+            <p>max-height:...; - definiuje maksymalną wysokość elementu blokowego; przy rozmiarze okna poniżej tej
+                wartości element się skraca (brak scrolla); powyżej tej wartości element nie wydłuża się; nadmiarowa
+                treść wychodzi poza obręb bloku,</p>
+            <p>overflow: hidden; - nadmiarowa treść zostaje ucięta,</p>
+            <p>overflow: visible; - nadmiarowa treść pozostaje widoczna poza obrębem bloku,</p>
+            <p>overflow: auto; - nadmiarowa treść zostaje ukryta i wewnątrz bloku pojawia się scroll umożliwiający jej
+                odczytanie,</p>
+            <p>padding-top: t; - grubość wewnętrznego marginesu górnego,</p>
+            <p>padding-right: r; - grubość wewnętrznego marginesu prawego,</p>
+            <p>padding-bottom: b; - grubość wewnętrznego marginesu dolnego,</p>
+            <p>padding-left: l; - grubość wewnętrznego marginesu lewego,</p>
+            <p>padding: t r b l; - grubość wewnętrznego marginesu kolejno górnego, prawego, dolnego i lewego,</p>
+            <p>padding: t r; - grubość wewnętrznego marginesu górnego i dolnego oraz prawego i lewego (wartości
+                lustrzane),</p>
+            <p>border-width:...; - grubość obramowania bloku,</p>
+            <p>border-style:...; - styl obramowania bloku (solid, dashed, dotted),</p>
+            <p>border-color:...; - kolor obramowania bloku,</p>
+            <p>border:x,y,z; - grubość x, styl y i kolor z obramowania bloku,</p>
+            <p>border-top/right/bottom/left:...; - jak przy własności padding,</p>
+            <p>border-radius:...; - zaokrąglenie narożników bloku (50% - koło/elipsa),</p>
+            <p>margin:... auto; - grubość marginesu dzielona na pół, element wyśrodkowany na stronie (musi mieć zadaną
+                szerokość),</p>
+            <p>box-sizing:content-box; - podane wymiary dotyczą zawartości bloku (padding i border trzeba dodać by
+                uzyskać całkowity wymiar bloku),</p>
+            <p>box-sizing:border-box; - podane wymiary dotyczą obramowania bloku (padding i border trzeba odjąć by
+                uzyskać wymiar zawartości),</p>
+            <p>position:static; - domyślne położenie elementu,</p>
+            <p>position:relative; - położenie względem domyślnej pozycji,</p>
+            <p>position:absolute; - położenie względem elementu nadrzędnego, w przypadku jego braku - względem elementu
+                body,</p>
+            <p>position:fixed; - położenie ustalone względem okna przeglądarki,</p>
+            <p>position:sticky; - obiekt podczas przewijania strony "przykleja się" w zadanej odległości od krawędzi
+                okna i pozostaje tam, dopóki nie dojdzie do spodu elementu nadrzędnego, wtedy pozostaje w obrębie tego
+                elementu; uwaga: element nadrzędny nie może mieć ustawionej właściwości overflow,</p>
+            <p>top; - położenie elementu podrzędnego względem górnej krawędzi elementu nadrzędnego,</p>
+            <p>right; - położenie elementu podrzędnego względem prawej krawędzi elementu nadrzędnego,</p>
+            <p>bottom; - położenie elementu podrzędnego względem dolnej krawędzi elementu nadrzędnego,</p>
+            <p>left; - położenie elementu podrzędnego względem lewej krawędzi elementu nadrzędnego,</p>
+            <p>z-index; - poziom warstwy - rzędna prostopadła do płaszczyzny strony; im większa wartość, tym wyżej,</p>
+            <p>float:right; - służy do "opływania" elementu położonego z prawej strony tekstem,</p>
+            <p>float:left; - służy do "opływania" elementu położonego z lewej strony tekstem,</p>
+            <p>float:right; - służy do "opływania" elementu położonego z prawej strony tekstem,</p>
+            <p>clear:left/right/both; - służy do usunięcia "opływania" elementu tekstem po lewej/prawej stronie/obu
+                stronach; podobne działanie: overflow: hidden/auto.</p>
+        </article>
+
+        <article class="article">
+            <h2 class="article__header">5. Specyfikacja produktu:</h2>
             <p><a href="https://www.w3.org/TR/CSS/">CSS</a></p>
         </article>
 
         <article class="article">
-            <h2 class="third-header">5. Generator schematów kolorystycznych:</h2>
+            <h2 class="article__header">6. Generator schematów kolorystycznych:</h2>
             <p><a href="https://coolors.co/">COOLORS</a></p>
         </article>
 

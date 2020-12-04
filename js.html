@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <h1 class="main-header">Kurs "WTF: Co ten frontend?!"</h1>
+        <h1 class="main-header main-header--js">Kurs "WTF: Co ten frontend?!"</h1>
 
         <nav class="navigation">
             <a href="index.html" class="navigation__link navigation__link--main">Home</a>
@@ -23,10 +23,10 @@
     </header>
 
     <main>
-    <h1 class="page-header">JavaScript</h1>
+        <h1 class="page-header">JavaScript</h1>
 
         <article class="article">
-            <h2 class="article-header">1. Standard:</h2>
+            <h2 class="article__header">1. Standard:</h2>
             <h2 class="important-text">ECMAScript2015+ (ES6+)</h2>
             <p>- ECMAScript jest to ustandaryzowany przez organizację ECMA skryptowy język programowania,</p>
             <p>- JavaScript implementuje rzeczy ze specyfikacji ECMAScript,</p>
@@ -34,34 +34,62 @@
         </article>
 
         <article class="article">
-            <h2 class="article-header">2. Link do zewnętrznego pliku ze skryptami (.js):</h2>
+            <h2 class="article__header">2. Link do zewnętrznego pliku ze skryptami (.js):</h2>
             <h2 class="important-text">&lt;script src="target"&gt;...&lt;/script&gt;</h2>
         </article>
 
         <article class="article">
-            <h2 class="article-header">3. Polecenia</h2>
+            <h2 class="article__header">3. Polecenia</h2>
             <p>Kod JS uruchamia się raz - po załadowaniu strony.</p>
-            <p>alert('...'); - wyskakujące okienko o treści "...",</p>
-            <p>console.log(name); - wpis w konsoli przeglądarki o treści równej wartości zmiennej name.</p>
+            <p><b>alert('...');</b> - wyskakujące okienko o treści "...",</p>
+            <p><b>console.log(name);</b> - wpis w konsoli przeglądarki o treści równej wartości zmiennej name.</p>
         </article>
 
         <article class="article">
-            <h2 class="article-header">4. Definiowanie zmiennych:</h2>
-            <p>const name='xyz'; - nazwa zmiennej dowolna, wartość tekstowa wzięta w '',</p>
-            <p>const age=36; - nazwa zmiennej dowolna, wartość liczbowa bez dodatkowych znaków.</p>
-        </article>
-
-        <article class="article">
-            <h2 class="article-header">5. Literały:</h2>
+            <h2 class="article__header">4. Literały:</h2>
             <p>backtick / backquote (`):</p>
-            <p>console.log(`Nazywam się ${name} i mam ${age} lat`); - wstawianie zmiennych do tekstu.</p>
+            <p><b>console.log(`Nazywam się ${name} i mam ${age} lat`);</b> - wstawianie zmiennych do tekstu.</p>
         </article>
-        
-        <footer class="footer">
-            &copy; Małgorzata Babiarz, Kraków 2020
-        </footer>
+
+        <article class="article">
+            <h2 class="article__header">5. Definiowanie zmiennych</h2>
+            <p><b>const</b> - zmienna mająca stałe połączenie z jedną wartością (const name='xyz'; const age=36;),</p>
+            <p><b>let</b> - zmienna, której połączenie z wartością można przepinać (let isHappy = true; isHappy = 'tak';).</p>
+            <br />
+            <p>Proste typy zmiennych:</p>
+            <p>string - tekst, otoczony ' lub " (zalecane '),</p>
+            <p>number - liczba,</p>
+            <p>bigint - liczba większa niż 2^53,</p>
+            <p>boolean - wartość logiczna true lub false,</p>
+            <p>null - wartość celowo niezdefiniowana,</p>
+            <p>undefined - brak definicji,</p>
+            <p>*symbol - tworzy "unikalne opakowanie".</p>
+            <br />
+            <p><b>typeof nazwaZmiennej</b> - polecenie sprawdzające typ zmiennej</p>
+        </article>
+
+        <article class="article">
+            <h2 class="article__header">6. DOM - Document Object Model</h2>
+            <p>DOM to "złożony" w przeglądarce HTML.</p>
+            <p>JavaScript może modyfikować DOM:</p>
+
+            <p><b>document.querySelector('.selector')</b> - zwraca node (węzeł) z dokumentu HTML; gdy selektor jest zapisany
+                zgodnie z css, pozwala wyszukiwać elementy dokumentu po klasie (do pierwszego
+                znalezionego pasującego elementu); możliwe przypisanie ich do zmiennych jako wartości.</p>
+            <p><b>nazwaZmiennej.innerHTML</b> - pozwala na nowo zdefiniować lub zobaczyć wartość zmiennej przypisaną do niej w
+                danym miejscu w skrypcie.</p>
+            <p>Korzystając z BEM warto tworzyć dodatkową klasę z modyfikatorem --js (ułatwia identyfikację / usuwa potencjalne problemy).</p>
+
+        </article>
 
     </main>
+
+    <footer class="footer">
+        &copy; Małgorzata Babiarz, Kraków 2020
+    </footer>
+
 </body>
+
+<script src="script.js"></script>
 
 </html>
